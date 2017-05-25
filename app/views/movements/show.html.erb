@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @movement.date %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @movement.description %>
+</p>
+
+<p>
+  <strong>Credit:</strong>
+  <%= @movement.credit %>
+</p>
+
+<p>
+  <strong>Debit:</strong>
+  <%= @movement.debit %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @movement.balance %>
+</p>
+
+<p>
+  <strong>Costcenter:</strong>
+  <%= @movement.costcenter_id %>
+</p>
+
+<p>
+  <strong>Third:</strong>
+  <%= @movement.third_id %>
+</p>
+
+<%= link_to 'Edit', edit_movement_path(@movement) %> |
+<%= link_to 'Back', movements_path %>

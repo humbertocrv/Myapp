@@ -33,22 +33,29 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+
+#gem 'bcrypt', '~> 3.1.11'
+#gem 'bcrypt-ruby', '3.0.1'
+#gem 'bcrypt', platforms: :ruby
+
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 gem 'sqlite3'
+#gem 'rspec-rails', '2.9.0'
+gem 'web-console', '>= 3.3.0'
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
-end
-
-group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-end
+gem 'annotate'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'devise'
+
+group :production do
+  gem 'pg'
+end
