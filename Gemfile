@@ -44,8 +44,10 @@ gem 'autoprefixer-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :development do
+	gem 'sqlite3'
+end
 
-gem 'sqlite3'
 #gem 'rspec-rails', '2.9.0'
 gem 'web-console', '>= 3.3.0'
 
