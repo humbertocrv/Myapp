@@ -67,8 +67,6 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
-    font-awesome-rails (4.7.0.2)
-      railties (>= 3.2, < 5.2)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.1)
@@ -119,11 +117,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_12factor (0.0.3)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.5)
-    rails_stdout_logging (0.0.5)
     railties (5.0.3)
       actionpack (= 5.0.3)
       activesupport (= 5.0.3)
@@ -185,13 +178,11 @@ DEPENDENCIES
   coffee-script-source (= 1.8.0)
   devise
   execjs
-  font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
   pg
   puma (~> 3.0)
   rails (~> 5.0.2)
-  rails_12factor
   sass-rails (~> 5.0)
   sqlite3
   turbolinks (~> 5)
