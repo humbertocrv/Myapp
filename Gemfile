@@ -36,34 +36,32 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-
-#gem 'bcrypt', '~> 3.1.11'
-#gem 'bcrypt-ruby', '3.0.1'
-#gem 'bcrypt', platforms: :ruby
-
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
-
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-group :development do
-	gem 'sqlite3'
-end
-
 #gem 'rspec-rails', '2.9.0'
-gem 'web-console', '>= 3.3.0'
 
-gem 'annotate'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+gem 'annotate'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
+
+group :development do
+
+	gem 'sqlite3'
+	gem 'web-console', '>= 3.3.0'
+
+end
 
 group :production do
+
   gem 'pg'
+
 end
