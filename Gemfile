@@ -16,16 +16,22 @@ gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 
 
-group :assets do
+#group :assets do
+	
+	#gem 'bootstrap-sass', '~> 3.2.0'
+	gem 'bootstrap-sass', '~> 3.3.0'
+	
 	#gem 'sass-rails', '>= 3.2'
 	gem 'sass-rails', '~> 5.0'
+	
 	# Use Uglifier as compressor for JavaScript assets
 	gem 'uglifier', '>= 1.3.0'
+	
 	# Use CoffeeScript for .coffee assets and views
-	gem 'coffee-rails', '~> 4.2'
+	#gem 'coffee-rails', '~> 4.2'
+	gem 'coffee-rails', '~> 4.1.0'
 	
-	
-end
+#end
 
 
 gem 'coffee-script-source', '1.8.0'
@@ -54,7 +60,6 @@ gem 'devise'
 gem 'annotate'
 gem 'autoprefixer-rails'
 gem 'font-awesome-rails'
-gem 'bootstrap-sass', '~> 3.2.0'
 
 
 
