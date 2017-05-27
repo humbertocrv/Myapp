@@ -21,6 +21,8 @@ gem 'puma', '~> 3.0'
 	#gem 'bootstrap-sass', '~> 3.2.0'
 	gem 'bootstrap-sass', '~> 3.3.0'
 	
+	gem 'autoprefixer-rails'
+
 	#gem 'sass-rails', '>= 3.2'
 	gem 'sass-rails', '~> 5.0'
 	
@@ -58,7 +60,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'annotate'
-gem 'autoprefixer-rails'
 gem 'font-awesome-rails'
 
 
