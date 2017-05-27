@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   
+  resources :movements
+  devise_for :users
   #resources :costcenters
   #resources :movements
   #resources :users #revisar que depronto toca quitar esta ruta

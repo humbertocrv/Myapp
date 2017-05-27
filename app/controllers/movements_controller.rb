@@ -1,10 +1,12 @@
 class MovementsController < ApplicationController
+  
+  before_action :authenticate_user!
   before_action :set_movement, only: [:show, :edit, :update, :destroy]
 
   # GET /movements
   # GET /movements.json
   def index
-    @movements = Movement.all
+    @movements = current_user.movements
   end
 
   # GET /movements/1
@@ -24,7 +26,7 @@ class MovementsController < ApplicationController
   # POST /movements
   # POST /movements.json
   def create
-    @movement = Movement.new(movement_params)
+    @movement = current_user.movements.new(movement_params)
 
     respond_to do |format|
       if @movement.save
@@ -69,6 +71,10 @@ class MovementsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def movement_params
-      params.require(:movement).permit(:date, :description, :credit, :debit, :balance, :costcenter_id, :third_id)
+      params.require(:movement).permit(:descripcion, :user_id)
+    end
+
+    def validate_user
+      redirect_to new_user_session_path, notice: "necesita estar logeado para ver la informacion"
     end
 end
