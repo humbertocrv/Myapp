@@ -68,7 +68,7 @@ Rails.application.configure do
    #   user_name: "ingeniero070385@gmail.com",
    #   password: "Rave123*" 
 
-  }
+  #}
 
 
   # Ignore bad email addresses and do not raise email delivery errors.
