@@ -17,11 +17,14 @@ gem 'puma', '~> 3.0'
 
 
 group :assets do
+	#gem 'sass-rails', '>= 3.2'
 	gem 'sass-rails', '~> 5.0'
 	# Use Uglifier as compressor for JavaScript assets
 	gem 'uglifier', '>= 1.3.0'
 	# Use CoffeeScript for .coffee assets and views
 	gem 'coffee-rails', '~> 4.2'
+	
+	
 end
 
 
@@ -49,8 +52,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'annotate'
-gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
+gem 'font-awesome-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
+
 
 
 group :development do
